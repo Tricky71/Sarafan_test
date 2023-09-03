@@ -1,0 +1,165 @@
+.footer {
+  padding-top: 7px;
+  box-shadow: 0px 4px 26px 0px rgba(0, 0, 0, 0.09);
+}
+
+.footer__logo {
+  width: 80px;
+  height: auto;
+  margin-bottom: -60px;
+  margin-left: auto;
+}
+
+.footer__menu {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.footer__menu-list {
+  @include reset-list;
+  position: relative;
+  margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &::after {
+      position: absolute;
+      content: '';
+      right: 0;
+      left: 0;
+      bottom: -15px;
+      height: 1px;
+      background-color: #c4c4c4;
+    }
+}
+
+.footer__menu-item {
+  margin-bottom: 15px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+}
+
+.footer__menu-link {
+  @include reset-link;
+}
+
+.footer__bottom {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.footer__search {
+  margin-bottom: 30px;
+  max-width: 350px;
+}
+
+.footer .footer__contacts-social {
+  margin-bottom: 30px;
+}
+
+.footer__contacts-address {
+  margin-bottom: 60px;
+}
+
+@media(min-width: $mobile-width) {
+  .footer__logo {
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+
+  .footer__menu {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer__menu-list {
+    margin-bottom: 0;
+      &::after {
+        display: none;
+      }
+  }
+
+  .footer__bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .footer .footer__search,
+  .footer .footer__contacts-social {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    padding: 43px 0;
+  }
+
+  .footer__logo {
+    width: 170px;
+  }
+
+  .footer__menu {
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+
+  .footer__menu-item {
+    margin-bottom: 32px;
+  }
+
+  .footer__menu-link {
+    font-size: 16px;
+  }
+
+  .footer .footer__search {
+    max-width: 268px;
+    margin-bottom: 50px;
+    order: 1;
+  }
+
+  .footer .footer__contacts-social {
+    order: 3;
+    margin-top: -30px;
+  }
+
+  .footer .footer__contacts-address {
+    width: 270px;
+    margin-bottom: 0;
+    align-items: end;
+    order: 2;
+      & p {
+        max-width: 155px;
+        margin-bottom: 20px;
+        font-size: 14px
+      } &--tel {
+        margin-right: 50px;
+      }
+  }
+
+  
+}
+
+@media (min-width: 1700px) {
+  .footer__menu {
+    justify-content: flex-start;
+  }
+  .footer__menu-list {
+    &--1 {
+      margin-right: 132px;
+    }
+    &--2 {
+      margin-right: 115px;
+    }
+    &--3 {
+      margin-right: 110px;
+    }
+  }
+}

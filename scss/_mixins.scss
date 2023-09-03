@@ -1,0 +1,28 @@
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin reset-link {
+  &:hover,
+  &:active {
+    text-decoration: none;
+    color: #C4C4C4;
+    // color: $accent;
+  }
+}
+
+@mixin transition {
+  transition: all .25s ease;
+}
+
+@mixin reset-button {
+  box-sizing: border-box;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

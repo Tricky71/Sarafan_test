@@ -1,0 +1,15 @@
+$default-font: "Calibri", sans-serif;
+$accent: #CD3B31;
+$text: #151516;
+
+// Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
+$grid-gutter-width: 30px;
+$grid-columns: 12;
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1600px);
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1797px);
+
+$gutter: $grid-gutter-width;
+
+$tablet-width: 992px;
+$desktop-width: 1600px;
+$mobile-width: 576px;

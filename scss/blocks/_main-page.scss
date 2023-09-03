@@ -1,0 +1,34 @@
+.main-page {
+  padding-top: 10px;
+  background-color: #fff;
+}
+
+.main-page .main-page__breadcrumps {
+  margin-bottom: 20px;
+}
+
+.main-promo {
+  margin-bottom: 50px;
+}
+
+.main-shops {
+  margin-bottom: 50px;
+}
+
+@media(min-width: $desktop-width) {
+  .main-page {
+    padding-top: 30px;
+  }
+
+  .main-promo {
+    margin-bottom: 80px;
+  }
+
+  .main-shops {
+    margin-bottom: 60px;
+  }
+
+  .main-photo {
+    margin-bottom: 30px;
+  }
+}

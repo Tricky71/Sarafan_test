@@ -1,0 +1,32 @@
+.breadcrumps {
+  @include reset-list;
+  display: flex;
+  
+}
+
+.breadcrumps__item-link {
+  display: block;
+  position: relative;
+  padding-right: 23px;
+  color:#C4C4C4;
+  &:hover,
+  &:active {
+    color:#C4C4C4;
+    text-decoration: none;
+  }
+  &::after {
+    position: absolute;
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='7' viewBox='0 0 8 7' fill='none'%3E%3Cpath d='M1 1L6.68156 3.02913C7.124 3.18714 7.124 3.81286 6.68156 3.97087L1 6' stroke='%23C4C4C4' stroke-linecap='round'/%3E%3C/svg%3E");
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &--active {
+    color: #6B7073;
+    cursor: auto;
+      &::after {
+        display: none;
+      }
+  }
+
+}

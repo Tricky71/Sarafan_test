@@ -1,0 +1,20 @@
+.address {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.address p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  font-size: 13px;
+  text-align: left;
+    &:last-child {
+      margin-bottom: 0;
+    }
+}
+
+.address__tel-link {
+  @include reset-link;
+}
